@@ -1,0 +1,87 @@
+/* Google fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+:root {
+  /* font sizes & family */
+  /* if we set html's font size 62.5% then 1rem = 10px */
+
+  --body-font: "Poppins", sans-serif;
+
+  --big-font: 4rem;
+  --h1-font: 3.6rem;
+  --h2-font: 2.4rem;
+  --h3-font: 2rem;
+  --h4-font: 1.8rem;
+  --normal-font: 1.6rem;
+  --small-font: 1.4rem;
+  --smaller-font: 1.3rem;
+
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* color variables */
+  --primary-color: #6abf4b;
+  --primary-color-hover: #519636;
+  --text-color: #333;
+  --text-color-light: #777777;
+  --border-color: #d1d1c9;
+  --white-color: #fff;
+  --section-bg: #f7f7f4;
+
+  /* z-index */
+  --z-overlay: 10;
+  --z-fixed: 100;
+
+  /* transition */
+  --tran-0-2: 0.2s;
+  --tran-0-3: 0.3s;
+  --tran-0-4: 0.5s;
+
+  /* font sizes for small screen 968px */
+  @media screen and (max-width: 990px) {
+    :root {
+      --big-font: 3.5rem;
+      --h1-font: 2.4rem;
+      --h2-font: 2rem;
+      --h3-font: 1.8rem;
+      --h4-font: 1.6rem;
+      --normal-font: 1.5rem;
+      --small-font: 1.3rem;
+      --smaller-font: 1.2rem;
+    }
+  }
+
+  /* pre css */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body,
+  button,
+  input {
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+    font-weight: var(--font-regular);
+    color: var(--text-color);
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--white-color);
+  }
+
+  /* reusable css */
+
+  /* header */
+
+  /* nav responsive */
+}
