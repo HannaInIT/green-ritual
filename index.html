@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matcha website</title>
 
+
+    <!-- swiper js css  -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -188,7 +192,23 @@
 
     <!-- home section-->
     <main>
-      <section class="section home" id="home"></section>
+      <section class="home" id="home">
+        <div class="home-content">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/homeImg1.jpg" alt="" class="home-img">
+              </div>
+                <div class="swiper-slide">
+      <img src="./images/homeImg1.jpg" alt="" class="home-img">
+    </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
 
       <!-- about section  -->
       <section class="section about" id="about"></section>
@@ -211,7 +231,10 @@
       <!-- scroll up -->
     </main>
 
+    <!-- swiper js  -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
     <!-- java script -->
-    <script src="./script.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
