@@ -307,15 +307,18 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.swiper-navBtn::after,
+/* .swiper-navBtn::after,
 .swiper-navBtn::before {
   font-size: 1.2rem;
+  font-weight: 600;
+} */
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 30px;
+  height: 30px;
 }
 
-.swiper-button-next {
-  right: 16rem;
-}
-
-.swiper-button-prev {
-  left: 16rem;
+.mySwiper {
+  --swiper-navigation-sides-offset: 16rem;
 }
