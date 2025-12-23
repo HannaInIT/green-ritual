@@ -112,6 +112,21 @@ img {
   column-gap: 0.6rem;
 }
 
+.button {
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  padding: 1.4rem 4rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+  transition: var(--tran-0-3);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--primary-color-hover);
+}
+
 /* header */
 .header {
   position: fixed;
@@ -135,7 +150,7 @@ img {
 .nav-link,
 .phone-icon,
 .phone-number {
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 .nav-link::before {
@@ -143,8 +158,8 @@ img {
 }
 
 .logo-text {
-  /* color: var(--primary-color-olive); */
-  color: var(--primary-color-dark-moss);
+  /* color: var(--primary-color-dark-moss); */
+  color: var(--white-color);
 }
 
 .logo-icon {
@@ -158,6 +173,7 @@ img {
 .nav-link {
   position: relative;
   text-transform: capitalize;
+  color: var(--white-color);
 }
 
 .nav-link::before {
@@ -169,7 +185,8 @@ img {
   width: 6px;
   border-radius: 50%;
   transform: translateX(-50%);
-  background-color: var(--primary-color-olive);
+  /* background-color: var(--primary-color-olive); */
+  background-color: var(--white-color);
   opacity: 0;
 }
 
@@ -307,12 +324,6 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* .swiper-navBtn::after,
-.swiper-navBtn::before {
-  font-size: 1.2rem;
-  font-weight: 600;
-} */
-
 .swiper-button-next svg,
 .swiper-button-prev svg {
   width: 30px;
@@ -322,3 +333,30 @@ img {
 .mySwiper {
   --swiper-navigation-sides-offset: 16rem;
 }
+
+.home-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: var(--z-fixed);
+  transform: translate(-50%, -50%);
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  row-gap: 4rem;
+}
+
+.homeSubtitle {
+  text-align: center;
+  font-size: var(--normal-font);
+  color: var(--white-color);
+}
+
+.homeTitle {
+  text-align: center;
+  font-size: var(--big-font);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+}
+
+/* about  */
