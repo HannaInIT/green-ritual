@@ -334,6 +334,20 @@ img {
   --swiper-navigation-sides-offset: 16rem;
 }
 
+.swiper {
+  --swiper-pagination-bullet-size: 1.2rem;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: var(--white-color);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  border: 3px solid var(--white-color);
+  background-color: var(--primary-color);
+}
+
 .home-details {
   position: absolute;
   top: 50%;
