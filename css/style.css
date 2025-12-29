@@ -150,6 +150,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.section-description {
+  padding: 0 16rem;
+}
+
 /* header */
 .header {
   position: fixed;
@@ -322,7 +326,7 @@ img {
   width: 100%;
 }
 
-.swiper-slide::before {
+.home .swiper-slide::before {
   content: "";
   position: absolute;
   left: 0;
@@ -606,6 +610,33 @@ img {
 }
 
 /* review  */
+
+.review {
+  background-color: #f2f2f2;
+}
+
+.review .section-title,
+.review .section-description {
+  color: var(--text-color);
+}
+.testi-content {
+  width: 100%;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.review-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.review-container {
+}
+
+.review-text {
+}
 
 /* responsive media  */
 @media screen and (max-width: 768px) {
