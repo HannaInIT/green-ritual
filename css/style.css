@@ -349,7 +349,8 @@ img {
   visibility: visible;
 }
 
-.home:hover .swiper-navBtn {
+.home:hover .swiper-navBtn,
+.review:hover .swiper-navBtn {
   opacity: 1;
 }
 
@@ -619,7 +620,10 @@ img {
 .review .section-description {
   color: var(--text-color);
 }
+
 .testi-content {
+  position: relative;
+  height: 100%;
   width: 100%;
   flex-direction: column;
   row-gap: 2rem;
@@ -632,10 +636,42 @@ img {
   margin-bottom: 2rem;
 }
 
-.review-container {
+.review-quote {
+  padding: 0 15rem;
+  text-align: center;
 }
 
-.review-text {
+.quote-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.testi-personDetails {
+  flex-direction: column;
+}
+
+.testi-personDetails .name {
+  font-size: 1.8rem;
+  font-weight: var(--font-medium);
+}
+
+/* swiper-btn  */
+.review .swiper-navBtn {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.review .swiper-button-next {
+  transform: translateY(2rem);
+  right: 2rem;
+}
+
+.review .swiper-button-prev {
+  left: 2rem;
+  transform: translateY(2rem);
+}
+
+.review .swiper-navBtn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* responsive media  */
