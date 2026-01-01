@@ -225,8 +225,8 @@ img {
 }
 
 .logo-icon {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   display: inline-block;
 }
 
@@ -240,8 +240,8 @@ img {
 
 .media-icon {
   fill: currentColor;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .navOpen-btn,
@@ -513,8 +513,7 @@ img {
 
 /* menu  */
 .menu {
-  /* background-color: var(--section-bg); */
-  background-color: var(--primary-color-dark-moss);
+  background-color: var(--section-bg);
 }
 
 .section-title,
@@ -648,7 +647,8 @@ img {
 }
 
 .quote-icon {
-  font-size: 3rem;
+  height: 3rem;
+  width: 3rem;
   color: var(--primary-color);
 }
 
@@ -694,7 +694,8 @@ img {
 }
 
 .newsletter .logo-icon {
-  font-size: 4rem;
+  width: 3rem;
+  height: 3rem;
   color: var(--text-color-light);
   font-weight: var(--font-medium);
 }
@@ -734,6 +735,73 @@ img {
 }
 
 /* footer  */
+.footer {
+  padding: 4rem 2rem 3rem;
+  background-color: var(--section-bg);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: center;
+}
+
+.footer-content {
+  display: grid;
+  row-gap: 3rem;
+}
+
+.footer .content-description,
+.footer .location-text {
+  text-align: left;
+  font-size: var(--small-font);
+}
+
+.footer .location-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.footer .content-description,
+.footer .location-icon,
+.footer .location-text {
+  color: var(--text-color-light);
+}
+
+.footer-linkContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
+}
+
+.footer-links {
+  display: grid;
+  row-gap: 1rem;
+  font-weight: var(--font-medium);
+  color: var(--white-color);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--small-font);
+  transition: var(--tran-0-3);
+}
+
+.footer-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-copyRight {
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  font-size: var(--small-font);
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid var(--text-color-light);
+}
 
 /* scroll up  */
 
