@@ -371,8 +371,15 @@ img {
   height: 30px;
 }
 
-.mySwiper {
+/* .mySwiper {
   --swiper-navigation-sides-offset: 16rem;
+} */
+
+.mySwiper .swiper-button-next {
+  right: 16rem;
+}
+.mySwiper .swiper-button-prev {
+  left: 16rem;
 }
 
 .swiper-pagination-bullet {
@@ -818,13 +825,13 @@ img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   z-index: var(--z-overlay);
   background-color: var(--white-color);
-  transition: var(--tran-0-3);
 }
 
 .scrollUp-icon {
   height: 2.5rem;
   width: 2.5rem;
   color: var(--primary-color-dark-moss);
+  transition: var(--tran-0-3);
   opacity: 0.9;
 }
 
@@ -833,6 +840,44 @@ img {
 }
 
 /* responsive media  */
+@media screen and (max-width: 1150px) {
+  .mySwiper .swiper-button-next {
+    right: 10rem;
+  }
+  .mySwiper .swiper-button-prev {
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mySwiper .swiper-button-next {
+    right: 3rem;
+  }
+  .mySwiper .swiper-button-prev {
+    left: 3rem;
+  }
+  .section-description {
+    padding: 0 8rem;
+  }
+
+  .about-imageContent {
+    height: 400px;
+  }
+
+  .aboutImg-textBox {
+    padding: 1.5rem 2rem;
+  }
+
+  .menu .menu-content {
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 3rem;
+  }
+
+  .brand-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .swiper-navBtn {
     visibility: hidden;
