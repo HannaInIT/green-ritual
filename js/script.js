@@ -41,6 +41,17 @@ if (navMenu && navOpenBtn) {
   });
 }
 
+// change header bg color
+window.addEventListener("scroll", () => {
+  const scrollY = window.pageYOffset;
+  if (scrollY > 5) {
+    document.querySelector("header").classList.add("header-active");
+  } else {
+    document.querySelector("header").classList.remove("header-active");
+  }
+  console.log(scrollY);
+});
+
 // scroll up button
 
 // nav link indicator
