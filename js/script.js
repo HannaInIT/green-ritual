@@ -76,8 +76,12 @@ window.addEventListener("scroll", () => {
     } else {
       navId.classList.remove("active-navlink");
     }
-    console.log(navId);
+
+    navId.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+      body.style.overflowY = "scroll";
+    });
   });
-  console.log(sections);
 });
+
 // scroll reveal animation
