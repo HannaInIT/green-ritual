@@ -205,6 +205,10 @@ img {
   color: var(--text-color);
 }
 
+.header-active .logo-icon {
+  filter: none;
+}
+
 .logo-icon {
   fill: var(--primary-color-olive);
 }
@@ -235,11 +239,15 @@ img {
   opacity: 1;
 }
 
+.header-active .active-navlink::before {
+  background-color: var(--text-color);
+}
+
 .logo-icon {
   width: 2.5rem;
   height: 2.5rem;
   display: inline-block;
-  filter: drop-shadow(0 1px 2px rgba(77, 85, 47, 0.6));
+  filter: drop-shadow(0 1px 2px rgba(77, 85, 47, 0.7));
 }
 
 .media-icons {
@@ -831,7 +839,7 @@ img {
 /* scroll up  */
 .scrollUp-btn {
   position: fixed;
-  bottom: 3rem;
+  bottom: -30%;
   right: 3rem;
   height: 3rem;
   width: 3rem;
@@ -842,6 +850,15 @@ img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   z-index: var(--z-overlay);
   background-color: var(--white-color);
+  transition: all var(--tran-0-3) ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scrollUpBtn-active {
+  bottom: 3rem;
+  opacity: 1;
+  visibility: visible;
 }
 
 .scrollUp-icon {
